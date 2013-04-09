@@ -84,6 +84,12 @@
       <IsTransformFile>True</IsTransformFile>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovingLogicToLibrary\MovingLogicToLibrary.csproj">
+      <Project>{D5129077-5A22-4485-A8AE-7749BBEE5062}</Project>
+      <Name>MovingLogicToLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

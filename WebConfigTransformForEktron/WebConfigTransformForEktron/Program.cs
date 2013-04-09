@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics;
 using System.IO;
+using MovingLogicToLibrary;
 
 namespace WebConfigTransformForEktron
 {
@@ -32,15 +33,7 @@ namespace WebConfigTransformForEktron
                     failures.Add(string.Format("{0} -> {1}", webConfigPath, exception.Message));
                 }
             }
-            PrintFailures(failures);
-        }
-
-        private static void PrintFailures(List<string> failures)
-        {
-            foreach (string failure in failures)
-            {
-                Console.WriteLine(failure);
-            }
+            TransformationUtility.PrintFailures(failures);
         }
 
         private static void ReadAppSettings()
