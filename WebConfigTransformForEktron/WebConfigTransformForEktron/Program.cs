@@ -24,7 +24,7 @@ namespace WebConfigTransformForEktron
             {
                 try
                 {
-                    Console.WriteLine("New File..................");
+                    Console.WriteLine("New File...................");
                     Console.WriteLine(Transform(webConfigPath));
                 }
                 catch (Exception exception)
