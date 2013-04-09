@@ -32,6 +32,7 @@ namespace WebConfigTransformForEktron
                     failures.Add(string.Format("{0} -> {1}", webConfigPath, exception.Message));
                 }
             }
+            // This is on master file changes
             PrintFailures(failures);
         }
 
