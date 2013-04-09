@@ -1,0 +1,5 @@
+_ReSharper.WebConfigTransformForEktron/
+*.suo
+*.user
+bin/
+obj/
